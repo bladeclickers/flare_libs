@@ -62,7 +62,9 @@ local srtjyytsfgjuhnfdrctu = setmetatable({
 	end
 })
 
-local Drawing = {}
+_G.Drawing = _G.Drawing or {}
+local Drawing = _G.Drawing
+
 Drawing.Fonts = {
 	["UI"] = 0,
 	["System"] = 1,
