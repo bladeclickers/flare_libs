@@ -954,7 +954,7 @@ function getrenderproperty(drawingObj, property)
 end
 
 function setrenderproperty(drawingObj, property, value)
-	assert(drawingFunctions.getrenderproperty(drawingObj, property), "'" .. tostring(property) .. "' is not a valid property of " .. tostring(drawingObj) .. ", " .. tostring(typeof(drawingObj)))
+	assert(getrenderproperty(drawingObj, property), "'" .. tostring(property) .. "' is not a valid property of " .. tostring(drawingObj) .. ", " .. tostring(typeof(drawingObj)))
 	drawingObj[property]  = value
 end
 
